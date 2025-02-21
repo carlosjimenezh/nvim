@@ -1,0 +1,70 @@
+----------movimientos pantalla
+h - izquierda
+j - abajo
+k - arriba
+l - derecha
+0 - ir al inicio de la línea
+$ - ir al final de la línea
+gg - ir al inicio del archivo
+G - ir al final del archivo
+^ - ir al primer carácter no vacío
+nG - ir a la línea n del archivo
+H - ir al inicio de la pantalla visible
+M - ir a la mitad de la pantalla visible
+L - ir al final de la pantalla visible
+ctrl d - moverse media pantalla hacia abajo
+ctrl u - moverse media pantalla hacia arriba
+ctrl f - moverse una pantalla completa hacia abajo
+ctrl b - moverse una pantalla completa hacia arriba
+
+
+------movimientos entre palabras
+w - ir al inicio de cada palabra
+e - ir al final de cada palabra
+b - ir al inicio de la palabra anterior
+ge - ir al final de la palabra anterior
+
+
+------movimientos entre parrafos
+} - ir al inicio del siguiente parrafo
+{ - ir al inicio del parrafo anterior
+
+
+------navegación en busqueda
+/texto - busca texto hacia adelante
+?texto - busca texto hacia atrás
+n - ir a la siguiente coincidencia
+N - ir a la concidencia anterior
+* - busca la palabra bajo el cursor hacia adelante
+# - busca la palabra bajo el cursor hacia atras
+
+
+-------insertar
+i - insertar
+I - insertar al inicio de la línea
+a - insertar en siguiente carácter
+A - insertar al final de la línea
+o - insertar en siguiente línea
+O - insertar en línea anterior
+
+
+-------borrar
+x - borrar caracter 
+cc - borrar línea actual y entrar en insertar
+dd - borrar línea actual
+dw - eliminar palabra
+
+
+-------edición de texto
+ciw - cambiar la palabra (change inner word)
+ci' - cambiar lo que esté dentro del signo ' (change inside ')
+
+
+------navegación entre buffer
+:bd - cerrar bufer actual
+:tabnew nombre_archivo - abrir un archivo en una nueva pestaña 
+
+
+------undo redu
+u - deshacer la última acción 
+ctrl r - rehacer el último cambio
