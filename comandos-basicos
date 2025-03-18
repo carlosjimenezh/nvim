@@ -16,7 +16,8 @@ ctrl d - moverse media pantalla hacia abajo
 ctrl u - moverse media pantalla hacia arriba
 ctrl f - moverse una pantalla completa hacia abajo
 ctrl b - moverse una pantalla completa hacia arriba
-
+ctrl e - scroll hacía abajo
+ctrl y - scroll hacía arriba
 
 ------movimientos entre palabras
 w - ir al inicio de cada palabra
