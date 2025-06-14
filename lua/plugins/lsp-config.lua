@@ -10,6 +10,7 @@ return {
 		config = function()
 			require("mason-lspconfig").setup({
 				ensure_installed = { "lua_ls", "ts_ls", "html", "intelephense", "emmet_language_server", "cssls", "phpactor" },
+        automatic_enable = false,
 			})
 		end,
 	},
