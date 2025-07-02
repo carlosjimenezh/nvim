@@ -15,6 +15,7 @@ vim.cmd("set nowrap")
 vim.g.maplocalleader = "\\"
 vim.keymap.set("n", "<leader>w", ":w<CR>", { desc = "Guardar" })
 vim.keymap.set("n", "<leader>q", ":q<CR>", { desc = "Cerrar" })
+vim.keymap.set("n", "<leader>e", ":lua vim.diagnostic.setqflist()<CR>", { desc = "Mostrar errores" })
 vim.keymap.set("i", "jj", "<ESC>", { desc = "Salir de insertar" })
 vim.keymap.set("n", "<leader>x", ":bd<CR>", { desc = "quitar el buffer actual" })
 -- hacer un comando para meverse arriba abajo rapidamenteq
