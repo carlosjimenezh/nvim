@@ -20,7 +20,7 @@ return {
       config = function ()
         require("telescope").setup {
           defaults = {
-            file_ignore_patterns = { "node_modules", "%.git/", "dist", "build" }
+            file_ignore_patterns = { "node_modules", "%.git/", "dist", "build", "assets", "composer"}
           },
           extensions = {
             ["ui-select"] = {
