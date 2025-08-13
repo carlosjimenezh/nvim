@@ -9,7 +9,7 @@ return {
 		"williamboman/mason-lspconfig.nvim",
 		config = function()
 			require("mason-lspconfig").setup({
-				ensure_installed = { "lua_ls", "ts_ls", "html", "intelephense", "emmet_language_server", "cssls", "phpactor" },
+				ensure_installed = { "lua_ls", "ts_ls", "html", "intelephense", "emmet_language_server", "cssls", "phpactor", "astro" },
         automatic_enable = false,
 			})
 		end,
@@ -33,7 +33,7 @@ return {
 			-- })
 			lspconfig.emmet_language_server.setup({
 				capabilities = capabilities,
-				filetypes = { "html", "css", "javascriptreact", "typescriptreact", "php" },
+				filetypes = { "html", "css", "javascriptreact", "typescriptreact", "php", "astro" },
 			})
       lspconfig.phpactor.setup({
         capabilities = capabilities
@@ -41,6 +41,9 @@ return {
 			lspconfig.cssls.setup({
 				capabilities = capabilities,
 			})
+      lspconfig.astro.setup({
+        capabilities = capabilities,
+      })
 			vim.keymap.set("n", "<leader>h", vim.lsp.buf.hover, {})
 			vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})
 			vim.keymap.set("n", "gD", vim.lsp.buf.declaration, {})
