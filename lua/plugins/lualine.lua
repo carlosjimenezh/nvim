@@ -5,7 +5,7 @@ return {
     gruvbox.normal.c.bg = '#000000'
     require('lualine').setup({
       options = {
-        theme = 'gruvbox'
+        theme = 'everforest'
       },
       sections = {
         lualine_c = {
