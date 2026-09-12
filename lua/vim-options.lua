@@ -15,7 +15,13 @@ vim.cmd("set nowrap")
 vim.g.maplocalleader = "\\"
 vim.keymap.set("n", "<leader>w", ":w<CR>", { desc = "Guardar" })
 vim.keymap.set("n", "<leader>q", ":q<CR>", { desc = "Cerrar" })
-vim.keymap.set("n", "<leader>e", ":lua vim.diagnostic.setqflist()<CR>", { desc = "Mostrar errores" })
+-- vim.keymap.set("n", "<leader>e", ":lua vim.diagnostic.setqflist()<CR>", { desc = "Mostrar errores" })
+vim.keymap.set("n", "<leader>e", function()
+    vim.diagnostic.setloclist()
+    vim.cmd("lopen")
+end, {
+    desc = "Mostrar errores del archivo",
+})
 vim.keymap.set("n", "<leader>gg", ":lua require('gitsigns').setqflist()<CR>", { desc = "Mostrar cambios git" })
 vim.keymap.set("i", "jj", "<ESC>", { desc = "Salir de insertar" })
 -- vim.keymap.set("n", "<leader>x", ":bd<CR>", { desc = "quitar el buffer actual" })
