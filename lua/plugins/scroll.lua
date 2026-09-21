@@ -9,6 +9,9 @@ return {
         "<C-f>",
         "<C-y>",
         "<C-e>",
+        "zz",
+        "zt",
+        "zb",
       },
       hide_cursor = true,       -- Hide cursor while scrolling
       stop_eof = true,          -- Stop at <EOF> when scrolling downwards
